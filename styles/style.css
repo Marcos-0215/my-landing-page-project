@@ -14,7 +14,7 @@ body {
 header {
   background-color: #1F2937;
   color: #E5E7EB;
-  height: 60px;
+  padding: 20px 0px;
   position: fixed;
   top: 0;
   right: 0;
@@ -22,6 +22,8 @@ header {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
   font-size: 18px;
+  z-index: 999;
+  min-width: 700px;
 }
 
 .header-content {
@@ -46,26 +48,67 @@ header {
 
 
 
-
-
-
 /********* PRESENTATION ************/
-
-
 
 
 #presentation {
   background-color: #1F2937;
   color: #E5E7EB;
-  display: flex;
-  margin-top: 201px;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  font-size: 18px;
+  padding: 50px 0px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  min-width: 700px;
 }
 
+#presentation-content {
+  background-color: #1F2937;
+  color: #E5E7EB;
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+}
+
+#left-presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+}
 
 .text1 {
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: bold;
 }
+
+.signup-btn {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #3882F6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 40px;
+  cursor: pointer;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+#right-presentation {
+  max-height: 340px;
+  background-color: blue;
+}
+
+#right-presentation img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  
+}
+
+
 
 /********* SECTIONS ************/
 
@@ -89,7 +132,7 @@ header {
 }
 
 .section-unit {
-  width: 500px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,8 +144,8 @@ header {
   object-fit: cover;
   border: 10px solid #3882F6;
   border-radius: 20px;
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
 }
 
 .section-text {
