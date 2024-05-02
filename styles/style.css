@@ -2,7 +2,7 @@
 
 body {
   font-family: roboto, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0px;
   margin-bottom: 0px;
 }
@@ -15,14 +15,17 @@ header {
   background-color: #1F2937;
   color: #E5E7EB;
   padding: 20px 0px;
+
+  /*
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  z-index: 999;
+  */
+
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
-  font-size: 18px;
-  z-index: 999;
   min-width: 700px;
 }
 
@@ -56,11 +59,17 @@ header {
   color: #E5E7EB;
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
-  font-size: 18px;
   padding: 50px 0px;
+  
+  /*
+  
   position: absolute;
   top: 60px;
   right: 0px;
+  margin-top: 60px;
+  */
+
+  position:static;
   min-width: 700px;
 }
 
@@ -112,11 +121,21 @@ header {
 
 /********* SECTIONS ************/
 
-.div-title {
-  font-size: 80px;
-}
 
 #sections-part {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  position:static;
+  display:block;
+  margin-top: 500px;
+}
+
+
+.div-title {
+  font-size: 36px;
+}
+
+#sections-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,7 +168,6 @@ header {
 }
 
 .section-text {
-  font-size: 40px;
   padding: 20px;
 }
 
